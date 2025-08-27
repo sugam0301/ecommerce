@@ -5,29 +5,54 @@ voice agent -> adding to the cart
 smart search (missing in some apps) 
 recommendation of products (other users, previous history)
 
+
+==========================
 #1. connect with google keep/ notion /simple text message
 
 use the google keep mcp or notion mcp to get the latest message
 simple text message too
 start from normal text message 
 
+----------------------------------------
 
 #2. ocr basic on both handwritten and normal list
-use basic vlm 
+use basic vlm -> or try some approach to keep it optimised -> incase of vlm start from smolvlm to internvl3.5-1B
+but will keep both options for in-house and api service
+
+----------------------------------------
 
 #3. support agent - refund, exchange, return, normal query about discounts/recommendation/recipe
-main agent will see what to go for
+main agent will see what to go for -> categorize message  => start from gpt-oss-20b or maybe internvl-3.5-1B or little bigger for 
+tool selection and calling
+
+learn implementing RL for agents to make them better with time
+
+----------------------------------------
 
 #4. voice agent - adding to the cart / normal conversation / query
 tool calling such that adding the product to the cart, update quantity, delete
 
+chatterbox + faster-whisper -> same process for tool calling
+
+----------------------------------------
+
 #5. smart search (missing in some apps)
-vector search but binary quantisation
+vector search but binary quantisation - 2bit techniques for searching otherwise can choose the elastic search
+
+----------------------------------------
 
 #6. recommendation of products (other users, previous history, location)
+2 tower approach maybe 
 
+----------------------------------------
 
-Database
+#7 linked from previous 
+memzero/knowledge graph/zep/custom -> episodic,procedural and semantic memory
+
+----------------------------------------
+
+Database (rough database tables)
+=======================================
 
 POSTGRES 
 
